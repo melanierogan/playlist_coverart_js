@@ -11,7 +11,7 @@ const handlebarsInstance = handlebars.create({
 app.engine('html', handlebarsInstance.engine);
 app.set('view engine', '.html');
 app.use(express.static('public'));
-
+app.use('/images', express.static('static'));
 // app.get('/', function (req, res) {
 //   res.send('Hello World')
 // })
