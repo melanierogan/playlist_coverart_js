@@ -1,12 +1,9 @@
 Next steps
 =======
 
-- [ ] Get jimp script running as is
-- [ ] Get user input working with form view
-- [ ] tests
-- [ ] Deploy to heroku
+- [ ] Add logos
+- [ ] Add option to upload photo
 - [ ] link form inputs to jimp variables
-- [ ] link an image search api
-- [ ] add search by keyword
+- [ ] link an image search api (based on your playlist title)
 - [ ] pull image search into form input
 
