@@ -1,6 +1,8 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
 const runJimp = require('./static/jimp');
+const runJimpIt = require('./jimp-it');
+
 const bodyParserMiddleware = require('body-parser');
 
 const app = new express();
