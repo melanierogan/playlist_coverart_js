@@ -1,13 +1,16 @@
 const Jimp = require('jimp');
 
-const runJimp = async (req, res, next) => {
+const runJimp = async (req, res, next, uploaded_image) => {
+	console.log('we jimping');
 	try {
 		console.log(req.body, 'this the body');
 		if (!req.body || !req.body.playlist_title) {
 			throw new Error('Missing a playlist title');
 		}
-		const imgActive = 'server/static/images/active/image1.jpeg';
+		const imgActive =
+			uploaded_image || 'server/static/images/active/image1.jpeg';
 		const imgExported = 'server/static/images/export/image1.jpeg';
+		const logo = 'server/static/images/logo.png';
 
 		const textData = {
 			text: `${req.body.playlist_title}`, //the text to be rendered on the image
@@ -22,6 +25,7 @@ const runJimp = async (req, res, next) => {
 					.resize(256, 256) // resize
 					.quality(60) // set JPEG quality
 					.greyscale() // set greyscale
+					.mask(logo, 5)
 					.quality(100);
 			})
 			.then(image => {
