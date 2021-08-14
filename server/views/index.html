@@ -1,17 +1,12 @@
 <div>
 	<h1>It music</h1>
 	<h2>🍑 </h2>
-	<form method="POST" action="/playlist">
+	<form method="post" action="/playlist">
 		<div class="form-group">
 			<label for="exampleInputEmail1">Playlist title</label>
-			<input type="text" class="form-control" name="playlist_title" aria-describedby="emailHelp" placeholder="Enter playlist title">
+			<input type="text" class="form-control" id="playlist_title" name="playlist_title" aria-describedby="emailHelp" placeholder="Enter playlist title">
 			<small id="emailHelp" class="form-text text-muted">Make it a good one.</small>
 		</div>
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
-
-	<!-- <form action="/upload" method="post" enctype="multipart/form-data">
-		<input type="file" name="avatar" />
-		<input type="submit" value="Submit">
-	</form> -->
 </div>

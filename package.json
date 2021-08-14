@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+https://github.com/melanierogan/playlist_coverart_js.git"
   },
+  "engines": {
+    "node": "16.x.x"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
