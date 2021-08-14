@@ -74,23 +74,6 @@ const runJimp = async (req, res, next) => {
 			.catch(err => {
 				console.error(err);
 			});
-		// .then(image => {
-		// 	return image
-		// 		.resize(256, 256) // resize
-		// 		.quality(60) // set JPEG quality
-		// 		.greyscale() // set greyscale
-		// 		.mask(logo, 5)
-		// 		.quality(100);
-		// })
-		// .then(image => {
-		// 	Jimp.loadFont(Jimp.FONT_SANS_32_BLACK).then(font => {
-		// 		image.print(font, 10, 10, textData.text).write(imgExported);
-		// 	});
-		// })
-		// .catch(error => {
-		// 	// Handle an exception.
-		// 	console.error(error);
-		// });
 		console.log('done');
 		res.status(200).json({
 			status: 'Cover art has been generated',
