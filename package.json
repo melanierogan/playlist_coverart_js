@@ -24,7 +24,7 @@
   "homepage": "https://github.com/melanierogan/playlist_coverart_js#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^5.3.2",
     "jimp": "^0.16.1",
     "multer": "^1.4.3",
